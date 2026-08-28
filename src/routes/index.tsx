@@ -88,7 +88,7 @@ function Home() {
 
       {/* Hero — verde profundo */}
       <section className="relative isolate overflow-hidden bg-primary text-background">
-        <div className="mx-auto grid max-w-[1400px] items-center gap-12 px-6 pt-32 pb-16 lg:grid-cols-[1fr_1.05fr] lg:gap-16 lg:px-12 lg:pt-40 lg:pb-24">
+        <div className="mx-auto grid max-w-[1400px] items-center gap-12 px-6 pt-28 pb-14 lg:grid-cols-[1fr_1.05fr] lg:gap-16 lg:px-12 lg:pt-36 lg:pb-20">
           <div>
             <span className="eyebrow text-accent">Advocacia · Goiânia</span>
             <h1 className="mt-8 font-display text-[2.75rem] leading-[1.05] tracking-tight sm:text-6xl lg:text-[4.25rem]">
@@ -212,7 +212,7 @@ function Home() {
                   className="group border border-primary/12 bg-background p-8 transition-colors duration-300 hover:border-accent/60"
                 >
                   <Icone className="h-7 w-7 text-accent" strokeWidth={1} />
-                  <h3 className="mt-8 font-display text-2xl leading-snug text-primary">
+                  <h3 className="mt-8 font-display text-[1.75rem] font-medium leading-snug tracking-tight text-primary">
                     {area.titulo}
                   </h3>
                   <p className="mt-4 text-[0.9rem] leading-relaxed text-muted-foreground">
@@ -227,7 +227,7 @@ function Home() {
       </section>
 
       {/* Sócios — marfim */}
-      <section id="socios" className="bg-background">
+      <section id="socios" className="border-y border-border bg-muted">
         <div className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
           <div className="max-w-2xl">
             <span className="eyebrow text-muted-foreground">Sócios</span>
