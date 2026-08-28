@@ -3,6 +3,9 @@ export const contato = {
   whatsappLabel: "(62) 99999-0000",
   whatsappHref:
     "https://wa.me/5562999990000?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20escrit%C3%B3rio%20Ribeiro%20Avelar.",
+  whatsappSecundarioLabel: "(62) 98888-0000",
+  whatsappSecundarioHref:
+    "https://wa.me/5562988880000?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20escrit%C3%B3rio%20Ribeiro%20Avelar.",
   email: "contato@ribeiroavelar.adv.br",
   endereco: "Av. Deputado Jamel Cecílio, 2496 — Jardim Goiás",
   cidade: "Goiânia / GO",
@@ -11,24 +14,28 @@ export const contato = {
 
 export const areas = [
   {
-    titulo: "Direito Empresarial e Societário",
-    texto:
-      "Estruturação societária, contratos, governança, operações e prevenção de litígios para empresas em crescimento.",
-  },
-  {
-    titulo: "Direito Imobiliário",
-    texto:
-      "Due diligence, incorporações, regularização, permutas e contratos de alto valor com segurança patrimonial.",
-  },
-  {
-    titulo: "Sucessório e Patrimonial",
-    texto:
-      "Planejamento sucessório, holdings familiares, inventários e proteção do patrimônio entre gerações.",
-  },
-  {
+    icone: "plane" as const,
     titulo: "Direito Migratório",
     texto:
-      "Vistos, autorizações de residência, cidadania e mobilidade internacional para pessoas e empresas.",
+      "Vistos, autorização de residência, registro na Polícia Federal e naturalização, do pedido à decisão final.",
+  },
+  {
+    icone: "building" as const,
+    titulo: "Societário e Empresarial",
+    texto:
+      "Estruturação societária, abertura e encerramento de empresas, contratos e acordos de sócios.",
+  },
+  {
+    icone: "home" as const,
+    titulo: "Direito Imobiliário",
+    texto:
+      "Regularização imobiliária, usucapião, escrituras e registros, além de ITBI, ITR e ganho de capital.",
+  },
+  {
+    icone: "users" as const,
+    titulo: "Sucessório e Patrimonial",
+    texto:
+      "Inventário judicial e extrajudicial, holdings familiares e planejamento sucessório com foco no ITCMD.",
   },
 ];
 
