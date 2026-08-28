@@ -91,11 +91,12 @@ function Home() {
         <img
           src={duplaHero.url}
           alt="Maíra Costa Ribeiro e Lucas Avelar, sócios do escritório Ribeiro Avelar"
-          className="absolute inset-0 -z-20 h-full w-full object-cover object-[70%_center]"
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-[85%_center] lg:object-[100%_center]"
           loading="eager"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-primary via-primary/85 to-primary/25" />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-primary/85 via-transparent to-primary/70" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-primary from-30% via-primary/75 via-52% to-transparent to-72%" />
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-primary/70 to-transparent" />
+
 
         <div className="relative mx-auto w-full max-w-[1400px] px-6 pt-32 pb-20 lg:px-12 lg:pt-40 lg:pb-28">
           <div className="max-w-xl">
