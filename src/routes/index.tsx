@@ -86,10 +86,20 @@ function Home() {
     <div id="top" className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
-      {/* Hero — verde profundo */}
-      <section className="relative isolate overflow-hidden bg-primary text-background">
-        <div className="mx-auto grid max-w-[1400px] items-center gap-12 px-6 pt-28 pb-14 lg:grid-cols-[1fr_1.05fr] lg:gap-16 lg:px-12 lg:pt-36 lg:pb-20">
-          <div>
+      {/* Hero — foto full-bleed com véu verde */}
+      <section className="relative isolate flex min-h-[82vh] items-center overflow-hidden bg-primary text-background lg:min-h-[88vh]">
+        <img
+          src={duplaHero.url}
+          alt="Maíra Costa Ribeiro e Lucas Avelar, sócios do escritório Ribeiro Avelar"
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-[70%_center]"
+          loading="eager"
+        />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-primary via-primary/85 to-primary/25" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-primary/85 via-transparent to-primary/70" />
+
+        <div className="relative mx-auto w-full max-w-[1400px] px-6 pt-32 pb-20 lg:px-12 lg:pt-40 lg:pb-28">
+          <div className="max-w-xl">
+            <div className="absolute -top-2 left-6 hidden h-20 w-20 border-l border-t border-accent/50 lg:block" />
             <span className="eyebrow text-accent">Advocacia · Goiânia</span>
             <h1 className="mt-8 font-display text-[2.75rem] leading-[1.05] tracking-tight sm:text-6xl lg:text-[4.25rem]">
               Estratégia jurídica
@@ -98,7 +108,7 @@ function Home() {
               <br />
               <em className="not-italic text-accent-soft">exigem segurança.</em>
             </h1>
-            <p className="mt-8 max-w-md text-base leading-relaxed text-background/70">
+            <p className="mt-8 max-w-md text-base leading-relaxed text-background/75">
               Assessoria jurídica de alto padrão, com análise técnica rigorosa, discrição e
               clareza na comunicação. Uma sociedade conduzida a quatro mãos.
             </p>
@@ -112,19 +122,9 @@ function Home() {
               </a>
             </div>
           </div>
-
-          <div className="relative">
-            <div className="absolute -left-6 -top-6 hidden h-24 w-24 border-t border-l border-accent/50 lg:block" />
-            <img
-              src={duplaHero.url}
-              alt="Maíra Costa Ribeiro e Lucas Avelar, sócios do escritório Ribeiro Avelar"
-              className="relative aspect-[5/4] w-full object-cover object-center"
-              loading="eager"
-            />
-            <div className="absolute -bottom-6 -right-6 hidden h-24 w-24 border-b border-r border-accent/50 lg:block" />
-          </div>
         </div>
       </section>
+
 
       {/* Escritório — marfim */}
       <section id="escritorio" className="bg-background">
